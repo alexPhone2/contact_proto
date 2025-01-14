@@ -1,4 +1,4 @@
-module contact_proto
+module github.com/alexPhone2/contact_proto
 
 go 1.23.3
 
