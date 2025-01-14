@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package contact;
+
+option go_package = "contact_proto/gen/go/contact;contact";
+
+service Contact {
+  rpc GetContact (ContactRequest) returns (ContactResponse) {};
+}
+
+message ContactRequest {
+  string e164 = 1;
+}
+
+message ContactResponse {
+  string e164 = 1;
+  string DisplayName = 2;
+}
